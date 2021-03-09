@@ -1,0 +1,53 @@
+body{
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 500px;
+    background-image: url("mik4.jpg");
+    opacity: 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.full{
+    background-color:rgb(242, 242, 242);
+    width: 100%;
+    margin-bottom: 10px;
+}
+h1{
+    color: black;
+    font-size: x-large;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+h2{
+    color: black;
+    font-size: large;
+}
+.block{
+    background-color:rgb(255, 153, 153);
+    width: 90%;
+    padding: 10px;
+    text-align: justify;
+    margin:  20px auto;
+}
+textarea{
+    padding: 5px; 
+    margin: 1px 0;
+    box-sizing: border-box;
+    width: 90%;
+    height: 100px;
+}
+.nosecret{
+    font-weight: bold;
+    color: red;
+}
+.part{
+    width: 95%;
+    background-color: rgb(255, 204, 204);
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.slider{
+    color: red;
+  }

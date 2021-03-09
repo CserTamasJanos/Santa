@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mikulás űrlap</title>
+</head>
+
+<body>
+    <div class="full">
+
+        <h1>Mikulás látogatási kérdelem</h1>
+
+        <div class="block">
+            <h2>Bevezető</h2>
+
+            <p>
+                Nagy pelyhekben hull a hó, mindjárt itt a Mikulás. Persze rengeteg dolga van és minden gyerek egyformán
+                fontos neki, ezért segítségre van szüksége. Az ajándékigények feldolgozásának elősegítésére, kérlek
+                teljesen őszintén töltsd ki az alábbi űrlapot!<br><span class="nosecret">Ne feledd a Mikulás előtt nincs titok!</span></p>
+
+            <div class="part">
+                <h2>A jelentkező adatai</h2>
+
+                <label>Milyen nevet adtak neked a szüleid?<span class="nosecret"> *</span></label><br>
+                <input type="text" id="inputTextBoxName"><br>
+    
+                <label>Hol élsz?<span class="nosecret"> *</span></label><br>
+                <input type="text" id="inputTextBoxAddress">
+            </div>
+
+            <div class="part">
+                <h2>Jó voltál?</h2>
+
+                <label>Kérlek az alábbi skálán jelöld be az elmúlt 12 havi magaviseletedet<br><span class="nosecret">Ne feledd a Mikulás előtt nincs titok!</span></label><br>
+                <br>
+                <label> Angyali - Vásott </label><br>
+                <input type="range" class="slider" id="rangeGoodBad"><br>
+                <br>
+                <label>Mit szeretnél karácsonyra?</label><br>
+                <textarea cols="90%" id="textAreaWishes"></textarea>
+            </div>
+
+        </div>
+
+        <div class="block">
+
+            <div class="part">
+                <h2>Hozáférési adatok</h2>
+
+                <label>Mi a tetőtök lejtésszöge? <span class="nosecret"> *</span></label>
+                <select id="selectRoofDegree">
+                    <option>0 - 5</option><br>
+                    <option>5 - 10</option><br>
+                    <option>10 - 15</option><br>
+                    <option>15 - 20</option><br>
+                    <option>20 - 25</option><br>
+                    <option>25 - 30</option>
+                </select><br>
+    
+                <p>Ha a tető lejtése/dőlésszöge meghaladja a 30 fokot akkor kérlek csatolj egy vázlatrajzot a tetőről,
+                    feltüntetve legalább kettő (2) rögzítési pontot. (pl. TV antenna, szellőző, kémény). <br><input type="submit" value="Tallózás" id="submitRoofPic"><label> Nincs kijelölve fájl.</label></p>
+            </div>
+
+            <div class="part">
+                <p>Tetőtök képes elviselni 1 tonna terhet négyzetméterenként? (9 rénszarvas, komplett szán, piros ruhás túlsúlyos manusz.)</p>
+                <input type="radio" id="radio1Roof1"><label>Igen</label><br>
+                <input type="radio" id="radio1Roof2"><label>Nem - Ebben az esetben a kocsibejárón macskánál nagyobb tárgy nem
+                    tartózkodhat.</label><br>
+                <input type="radio" id="radio1Roof3"><label>Talán - Ebben az esetben kérlek csatolj egy a tervező által kiállított
+                    nyilatkozatot a tető átlagos teherbírásáról. </label><br>
+                <input type="submit" value="Tallózás" id="submitRoofLoadCapacity"><label> Nincs kijelölve fájl.</label>
+            </div>
+
+            <div class="part">
+                <p>Van kéményetek?</p>
+                <input type="radio" id="radio2Chimney1"><label>Igen - Ebben az esetben mindenképpen le legyen ellenőrizve, hogy a tűztér mentes
+                    minde nparázsló és éles tárgytól. Kéményseprés időpontja: </label><input type="text"
+                    value="éééé hh nn"><br>
+                <input type="radio" id="radio2Chimney2"><label>A légjárat becsült átlagos átmérője: </label>
+                <select id="selectChimneyWidth">
+                    <option>10 - 20</option><br>
+                    <option>20 - 40</option><br>
+                    <option>40 - 60</option><br>
+                    <option>60 - 80</option><br>
+                    <option>90 - 100</option>
+                </select><label> centiméter</label><br>
+                <input type="radio" id="radio2Chimney3"><label>Nincs - Ebben az esetben hagyd a(z) ajtót/hátsó ajtót résnyire nyitva.</label>
+            </div>   
+        </div>
+
+        <div class="block">
+            <div class="part">
+                <h2>Ajándék elhelyezés - részletei</h2>
+
+                <p>Hol szeretnéd megtalálni a meglepetést?</p>
+                <input type="radio" id="radio3PresentPlace1"><label>Lábbeleiben. Kérlek add meg a méretét: </label>
+                <select id="selectShoeSize">
+                    <option>15 - 20</option><br>
+                    <option>20 - 25</option><br>
+                    <option>25 - 30</option><br>
+                    <option>30 - 35</option><br>
+                    <option>35 - 40</option><br>
+                    <option>40 - 45</option><br>
+                </select><br>
+                <input type="radio" id="radio3PresentPlace2"><label>Ágy végében</label><br>
+                <input type="radio" id="radio3PresentPlace3"><label>Karácsonyfa alatt</label><br>
+                <input type="radio" id="radio3PresentPlace4"><label>Elrejtve - Ebben az esetben állítsd be a megtalálási nehézséget. </label><br>
+                <br>
+                <label>Azonnal legyen meg - Rámehet az egész nap</label><br>
+                <input type="range" id="rangeFindDifficulty">
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="part">
+                <h2>Frissítőkről szóló rész</h2>
+
+                <label>Ki lesz készítve némi frissítő?</label>
+                <input type="radio" id="radio4Refreshings"><br>
+            </div>
+
+            <div class="part">
+                <label>Milyen típusú frissítők lesznek kikészítve? (Kérlek egynél mindenképpen többet jelölj be.)</label><br>
+                <input type="checkbox" id="checkBox1Brandy"><label>Brandy</label><br>
+                <input type="checkbox" id="checkBoxRum"><label>Rum</label><br>
+                <input type="checkbox" id="checkBoxGin"><label>Gin</label><br>
+                <input type="checkbox" id="checkBoxScotch"><label>Scotch</label><br>
+                <input type="checkbox" id="checkBoxWhiskey"><label>Whiskey</label><br>
+                <input type="checkbox" id="checkBoxVodka"><label>Vodka</label><br>
+                <input type="checkbox" id="checkBoxPalinka"><label>Pálinka</label><br>
+                <input type="checkbox" id="checkBoxBier"><label>Sör</label><br>
+                <input type="checkbox" id="checkBoxWine"><label>Bor</label><br>
+                <label>És még </label><input type="text" id="inputTextBoxPlusAlcohol"><br>
+            </div>
+    
+            <div class="part">
+                <p>Hová lesznek kikészítve a frissítők?</p>
+                <input type="radio" id="radio5RefreschingPlace1"><label>Hűtőszekrény (Előnyben reészesített lehetőség)</label><br>
+                <input type="radio" id="radio5RefreschingPlace2"><label>Konyhaasztal</label><br>
+                <input type="radio" id="radio5RefreschingPlace3"><label>Italosszekrény (Kérlek hagyd nyitva vagy a kulcs legyen nyilvánvaló
+                    helyen.)</label><br>
+                <input type="radio" id="radio5RefreschingPlace4"><label>Bárpult</label><br>
+                <input type="radio" id="radio5RefreschingPlace5"><label>Szekrény (Kérlek csatolj egy képet arról, hogy a szekrény pontosan hol
+                    található.)</label>
+            </div>
+        </div>
+
+        <div class="block" style="margin-bottom: 10px;">
+            <h2>Nyilatkozat</h2>
+
+            <p>
+                Én, a fentebb megadott nevű és a címen lakó gyermek ezennel kijelentem, hogy az itt megadott adatok
+                igazak. Ezen túlmenően felhatalmazom a Mikulást, hogy az adatok igazolása és ajándék-egyeztetés végett
+                felvegye a kapcsolatota szüleimmel. Kinyilvánítom, hogy magaviselet tárgyában az űrapon kitöltöttek és
+                a szüleim információ között eltérés lehet, azonban az általam megadott információ a releváns, nem
+                mondhattam mást mint az igazat, hiszen a <span class="nosecret">Mikulás előtt nincsen titok.</span>
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
